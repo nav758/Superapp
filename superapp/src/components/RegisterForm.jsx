@@ -94,6 +94,7 @@ export default function RegisterForm() {
       if(isError) {
         return;
       }else{
+        window.localStorage.setItem("userInfo", JSON.stringify(formValue));
         navigate('/info')
       }
     }
