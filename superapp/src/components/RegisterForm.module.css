@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+}
+
+img {
+  width: 50vw;
+  display: block;
+  height: 100vh;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 1vh;
+  left: 2vw;
+  color: white;
+  font-size: 55px;
+  font-weight: 900;
+  max-width: 50vw;
+  font-family: Roboto;
+
+}
+
+.body {
+  width: 50vw;
+  height: 100vh;
+  background: #000000;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  
+}
+
+.body .super {
+  color: #72db73;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.super {
+  font-family: "Single Day", cursive;
+}
+
+form input {
+  margin: 1px;
+  padding: 12px;
+  width: 90%;
+  max-width: 300px;
+  background-color: #292929;
+  border-radius: 6px;
+  color: white;
+  outline: none;
+  transition: border 0.3s;
+  outline: none;
+}
+
+form input:focus {
+  border-color: #72db73;
+}
+
+form .error {
+  color: red;
+  font-size: 14px;
+  width: 90%;
+  max-width: 200px;
+  margin: -10px auto 8px;
+  text-align: left;
+  margin-top: 2px;
+}
+
+form label {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 10px;
+  width: 90%;
+  max-width: 300px;
+  margin: 12px auto;
+  text-align: left;
+}
+
+form label input[type="checkbox"] {
+  margin: 0;
+  width: 24px;
+  height: 24px;
+}
+
+form button {
+  width: 90%;
+  max-width: 400px;
+  margin: 24px auto;
+  border-radius: 24px;
+  padding: 10px 12px;
+  color: white;
+  background-color: #72db73;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #5cb85c;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #7c7c7c;
+  width: 90%;
+  max-width: 400px;
+  margin: 8px auto;
+  text-align: left;
+  line-height: 1.2rem;
+}
+
+.footer span {
+  color: #72db73;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .body {
+    padding: 2vw;
+  }
+}
