@@ -1,0 +1,18 @@
+@media only screen and (max-width: 600px) {
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .text {
+    width: 100vw;
+    padding: 0px;
+  }
+  .genre {
+    width: 100vw;
+    padding: 0px;
+        
+  }
+  
+}

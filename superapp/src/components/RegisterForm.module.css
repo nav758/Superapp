@@ -2,7 +2,10 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #000000;
 }
+
+
 .container {
   display: flex;
 }
@@ -22,7 +25,6 @@ img {
   font-weight: 900;
   max-width: 50vw;
   font-family: Roboto;
-
 }
 
 .body {
@@ -35,7 +37,6 @@ img {
   flex-direction: column;
   justify-content: center;
   margin: 0;
-  
 }
 
 .body .super {
@@ -128,5 +129,19 @@ form button:hover {
 @media (max-width: 768px) {
   .body {
     padding: 2vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    width: 100vw;
+  }
+
+  .body {
+    width: 100vw;
   }
 }

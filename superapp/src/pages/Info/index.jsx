@@ -10,8 +10,12 @@ import western from "../../assets/western.png";
 import Box from "../../components/MoviesBox";
 import Chip from "../../components/Chip";
 import { useNavigate } from "react-router-dom";
-
 import { useState } from "react";
+import styles from "./info.module.css";
+
+
+
+
 const genres = [
   {
     id: "Action",
@@ -74,7 +78,10 @@ function Info() {
         minHeight: "100vh",
         padding: "0 100px 0 80px",
         fontFamily: "Roboto",
+
+     
       }}
+      className={styles.container}
     >
       <div
         style={{
@@ -82,6 +89,7 @@ function Info() {
           width: "50vw",
           padding: "50px",
         }}
+        className={styles.text}
       >
         <h1
           style={{
@@ -131,6 +139,7 @@ function Info() {
             width: "50vw",
             padding: "0 50px 0 50px",
           }}
+          className={styles.genre}
         >
           {genres.map((genre) => (
             <Box
@@ -158,6 +167,7 @@ function Info() {
             navigate("/showcase");
           }}
           disabled={selectedMovies.length<3}
+          
         >
           &nbsp;&nbsp;&nbsp;Next Page&nbsp;&nbsp;&nbsp;
         </button>
